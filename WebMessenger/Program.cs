@@ -29,6 +29,8 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 
+app.MapGet("/", () => "Hello World!");
+
 app.MapHub<ChatHubb>("chat");
 
 app.Run();
